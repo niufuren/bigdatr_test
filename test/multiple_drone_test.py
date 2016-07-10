@@ -1,6 +1,7 @@
 import unittest
 import multiple_drone
 
+TOTAL_DRONE_NUMBER = 2
 
 class TestDroneMethods(unittest.TestCase):
     def setUp(self):
@@ -9,11 +10,11 @@ class TestDroneMethods(unittest.TestCase):
     def test_read_commands(self):
         '''the test_input.txt contains a string "xvx>^<"
         '''
-        self.multiple_drone.read_commands("test/test_input.txt", 2, 1)
+        self.multiple_drone.read_commands("test/test_input.txt", TOTAL_DRONE_NUMBER, 1)
         self.assertEqual(self.multiple_drone.command,
                          ['x', 'x', '^'])
 
-        self.multiple_drone.read_commands("test/test_input.txt", 2, 2)
+        self.multiple_drone.read_commands("test/test_input.txt", TOTAL_DRONE_NUMBER, 2)
         self.assertEqual(self.multiple_drone.command,
                          ['v', '>', '<'])
 

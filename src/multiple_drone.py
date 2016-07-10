@@ -52,7 +52,7 @@ def main(argv):
 
     billboard_num = drone_first.billboard_number_union(drone_second)
 
-    print("The number of billboards that are captured at least once is " +
+    print("The number of billboards that are captured by two drones at least once is " +
           str(billboard_num))
 
 
