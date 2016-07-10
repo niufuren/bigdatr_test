@@ -12,7 +12,8 @@ class Snapshot:
                 self.snapshot_num[billboard_index] + 1
         else:
             ''' if the coordinate is not in the position list
-                insert the coordinate of the billboard to the list of position '''
+                insert the coordinate of the billboard to the list of position
+            '''
             self.position.append(billboard_coordinate)
             self.snapshot_num.append(1)
 

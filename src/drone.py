@@ -3,21 +3,22 @@ from snapshot import *
 
 import sys
 
+
 class Drone:
     def __init__(self):
         self.command = []
         self.movement = Movement()
         self.snapshot = Snapshot()
 
-    def read_commands(self, file_name):     
+    def read_commands(self, file_name):
         instructor_file = open(file_name, "r")
         line = instructor_file.readlines()
-        self.command = line[0]
+        self.command = list(line[0])
         instructor_file.close()
-     
-    def process(self):        
+
+    def process(self):
         for instructor in self.command:
-            if instructor == "^":                
+            if instructor == "^":
                 self.movement.move_up()
             elif instructor == "v":
                 self.movement.move_down()
