@@ -2,8 +2,8 @@
 
 ### Requirement
 
-- install scala 2.12
-- install sbt 0.7
+- install scala 2.11.7
+- install sbt 0.13.8
 
 ### Run code
 

@@ -14,16 +14,15 @@ class SnapshotSpec extends FlatSpec {
   "A snapshot class" should "record the position and counts of a potographed billboard" in {
     val f = fixture
     f.snapshot.billboardShot(f.movement)
-    assert(f.snapshot.position === ListBuffer((1,1)))
+    assert(f.snapshot.position === ListBuffer((1, 1)))
     assert(f.snapshot.snapshotNum === ListBuffer(1))
 
     f.snapshot.billboardShot(f.movement)
     assert(f.snapshot.snapshotNum === ListBuffer(2))
 
-    // assert(f.movement.y === 0)
   }
 
-  it should "count the number of unique billboards" in{
+  it should "count the number of unique billboards" in {
     val f = fixture
     assert(f.snapshot.uniqueBillboardNum() === 0)
 

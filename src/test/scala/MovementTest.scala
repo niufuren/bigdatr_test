@@ -7,12 +7,6 @@ class MovementSpec extends FlatSpec {
       val movement = new Movement
     }
 
-  // "A movement class" should "start at the coordinate (0,0)" in {
-  //   val f = fixture
-  //   assert(f.movement.x === 0)
-  //   assert(f.movement.y === 0)
-  // }
-
   "A movement class" should "decrease y-coordinate by 1 when move down" in {
     val f = fixture
     f.movement.moveDown()

@@ -1,8 +1,8 @@
-name := "Bigdatr Drone Chanllenge"
+name := "Bigdatr Drone Challenge"
 
 version := "1.1"
 
-scalaVersion := "2.11.6"
+scalaVersion := "2.11.7"
 
 
 libraryDependencies += "org.scalactic" %% "scalactic" % "2.2.6"
