@@ -3,11 +3,14 @@
 ### Requirement
 
 - install scala 2.12
+- install sbt 0.7
 
 ### Run code
 
-- `scalac *.scala`
-- `scala MultipleDrone input.txt`
+`sbt "run input.txt"`
+
+### Run test
+`sbt test`
 
 ### Output   
    The number of billboards that are captured by two drones at least once is 955  
